@@ -1,0 +1,5 @@
+import { LANGUAGES, type Language } from "@/lib/types";
+export function LanguageSelector({ value, onChange }: { value: Language[]; onChange: (value: Language[]) => void }) {
+  function toggle(language: Language) { onChange(value.includes(language) ? value.filter((item) => item !== language) : [...value, language]); }
+  return <fieldset><legend className="text-sm font-semibold text-slate-700">Translate voice to</legend><p className="mt-1 text-xs text-slate-500">Select one or more languages.</p><div className="mt-3 grid grid-cols-2 gap-2">{LANGUAGES.map((language) => <button key={language} type="button" onClick={() => toggle(language)} className={`rounded-xl border px-3 py-2 text-left text-sm font-medium transition ${value.includes(language) ? "border-violet-600 bg-violet-600 text-white shadow-md shadow-violet-200" : "border-slate-200 bg-white text-slate-600 hover:border-violet-300"}`}><span className="mr-2 text-xs">{value.includes(language) ? "✓" : "+"}</span>{language}</button>)}</div></fieldset>;
+}

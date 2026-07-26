@@ -1,0 +1,1 @@
+export function VideoPreview({ src, title }: { src: string; title: string }) { return <div className="overflow-hidden rounded-2xl border border-slate-200 bg-black"><video className="aspect-video w-full" controls src={src} /><p className="truncate bg-white px-4 py-3 text-sm font-medium text-slate-700">{title}</p></div>; }
