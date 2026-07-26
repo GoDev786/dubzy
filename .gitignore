@@ -1,0 +1,24 @@
+# Dependencies and Next.js build output
+node_modules/
+.next/
+out/
+
+# Local environment secrets
+.env
+.env.*
+!.env.example
+
+# Runtime-generated media (keep directory placeholders)
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Local keys and OS/editor files
+dd
+dd.pub
+.DS_Store
+*.log
+
+# Vercel project metadata
+.vercel/
