@@ -1,4 +1,4 @@
-# UGC Voice Translator
+# UGC Voice dubzy Demo Link : https://dubzy-behnzd3nl-godev786s-projects.vercel.app
 
 A local-first Next.js MVP for dubbing UGC videos into another language. Videos are uploaded to `uploads/`; WAV intermediates and final MP4s are written to `outputs/`.
 
